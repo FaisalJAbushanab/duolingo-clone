@@ -9,14 +9,14 @@ export const QuestionBubble = ({ question }: QuestionBubbleProps) => {
     <div className="mb-6 flex items-center gap-x-4">
       <Image
         src="/mascot.svg"
-        alt="Mascot"
+        alt="التعويذة"
         height={60}
         width={60}
         className="hidden lg:block"
       />
       <Image
         src="/mascot.svg"
-        alt="Mascot"
+        alt="التعويذة"
         height={40}
         width={40}
         className="block lg:hidden"

@@ -132,7 +132,7 @@ export const Quiz = ({
               setHearts((prev) => Math.min(prev + 1, MAX_HEARTS));
             }
           })
-          .catch(() => toast.error("Something went wrong. Please try again."));
+          .catch(() => toast.error("حدث خطأ ما. يرجى المحاولة مرة أخرى."));
       });
     } else {
       startTransition(() => {
@@ -148,7 +148,7 @@ export const Quiz = ({
 
             if (!response?.error) setHearts((prev) => Math.max(prev - 1, 0));
           })
-          .catch(() => toast.error("Something went wrong. Please try again."));
+          .catch(() => toast.error("حدث خطأ ما. يرجى المحاولة مرة أخرى."));
       });
     }
   };
@@ -167,7 +167,7 @@ export const Quiz = ({
         <div className="mx-auto flex h-full max-w-lg flex-col items-center justify-center gap-y-4 text-center lg:gap-y-8">
           <Image
             src="/finish.svg"
-            alt="Finish"
+            alt="إنهاء"
             className="hidden lg:block"
             height={100}
             width={100}
@@ -175,14 +175,14 @@ export const Quiz = ({
 
           <Image
             src="/finish.svg"
-            alt="Finish"
+            alt="إنهاء"
             className="block lg:hidden"
             height={100}
             width={100}
           />
 
           <h1 className="text-lg font-bold text-neutral-700 lg:text-3xl">
-            Great job! <br /> You&apos;ve completed the lesson.
+            عمل رائع! <br /> لقد أكملت الدرس.
           </h1>
 
           <div className="flex w-full items-center gap-x-4">
@@ -205,7 +205,7 @@ export const Quiz = ({
 
   const title =
     challenge.type === "ASSIST"
-      ? "Select the correct meaning"
+      ? "اختر الاجابة الصحيحة"
       : challenge.question;
 
   return (
@@ -221,7 +221,7 @@ export const Quiz = ({
       <div className="flex-1">
         <div className="flex h-full items-center justify-center">
           <div className="flex w-full flex-col gap-y-12 px-6 lg:min-h-[350px] lg:w-[600px] lg:px-0">
-            <h1 className="text-center text-lg font-bold text-neutral-700 lg:text-start lg:text-3xl">
+            <h1 className="text-center text-lg font-bold text-neutral-700 lg:text-right lg:text-3xl">
               {title}
             </h1>
 

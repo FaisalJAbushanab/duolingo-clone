@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import {
   ClerkLoaded,
@@ -8,24 +8,25 @@ import {
   SignedIn,
   SignedOut,
   UserButton,
-  useAuth,
 } from "@clerk/nextjs";
 import { Loader } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-import Banner from "@/components/banner";
+// import Banner from "@/components/banner";
 import { Button } from "@/components/ui/button";
-import { links } from "@/config";
 import { cn } from "@/lib/utils";
 
 export const Header = () => {
-  const { isSignedIn } = useAuth();
   const [hideBanner, setHideBanner] = useState(true);
+
+  useEffect(() => {
+    setHideBanner(true);
+  }, []);
 
   return (
     <>
-      <Banner hide={hideBanner} setHide={setHideBanner} />
+      {/* <Banner hide={hideBanner} setHide={setHideBanner} /> */}
 
       <header
         className={cn(
@@ -34,15 +35,15 @@ export const Header = () => {
         )}
       >
         <div className="mx-auto flex h-full items-center justify-between lg:max-w-screen-lg">
-          <Link href="/" className="flex items-center gap-x-3 pb-7 pl-4 pt-8">
-            <Image src="/mascot.svg" alt="Mascot" height={40} width={40} />
+          <Link href="/" className="flex items-center gap-x-3 pb-7 pr-4 pt-8">
+            <Image src="/mascot.svg" alt="التعويذة" height={40} width={40} />
 
             <h1 className="text-2xl font-extrabold tracking-wide text-green-600">
-              Lingo
+              معمل القدرات
             </h1>
           </Link>
 
-          <div className="flex gap-x-3">
+          <div className="flex gap-x-3" dir="rtl">
             <ClerkLoading>
               <Loader className="h-5 w-5 animate-spin text-muted-foreground" />
             </ClerkLoading>
@@ -54,24 +55,10 @@ export const Header = () => {
               <SignedOut>
                 <SignInButton mode="modal">
                   <Button size="lg" variant="ghost">
-                    Login
+                    تسجيل الدخول
                   </Button>
                 </SignInButton>
               </SignedOut>
-
-              <Link
-                href={links.sourceCode}
-                target="_blank"
-                rel="noreferrer noopener"
-                className={isSignedIn ? "pt-1.5" : "pt-3"}
-              >
-                <Image
-                  src="/github.svg"
-                  alt="Source Code"
-                  height={20}
-                  width={20}
-                />
-              </Link>
             </ClerkLoaded>
           </div>
         </div>

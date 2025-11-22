@@ -32,18 +32,18 @@ export const ExitModal = () => {
           <div className="mb-5 flex w-full items-center justify-center">
             <Image
               src="/mascot_sad.svg"
-              alt="Mascot Sad"
+              alt="التعويذة الحزينة"
               height={80}
               width={80}
             />
           </div>
 
           <DialogTitle className="text-center text-2xl font-bold">
-            Wait, don&apos;t go!
+            انتظر، لا تذهب!
           </DialogTitle>
 
           <DialogDescription className="text-center text-base">
-            You&apos;re about to leave the lesson. Are you sure?
+            أنت على وشك مغادرة الدرس. هل أنت متأكد؟
           </DialogDescription>
         </DialogHeader>
 
@@ -55,7 +55,7 @@ export const ExitModal = () => {
               size="lg"
               onClick={close}
             >
-              Keep learning
+              متابعة التعلم
             </Button>
 
             <Button
@@ -67,7 +67,7 @@ export const ExitModal = () => {
                 router.push("/learn");
               }}
             >
-              End session
+              إنهاء الجلسة
             </Button>
           </div>
         </DialogFooter>

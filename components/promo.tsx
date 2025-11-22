@@ -8,16 +8,16 @@ export const Promo = () => {
     <div className="space-y-4 rounded-xl border-2 p-4">
       <div className="space-y-2">
         <div className="flex items-center gap-x-2">
-          <Image src="/unlimited.svg" alt="Pro" height={26} width={26} />
+          <Image src="/unlimited.svg" alt="برو" height={26} width={26} />
 
-          <h3 className="text-lg font-bold">Upgrade to Pro</h3>
+          <h3 className="text-lg font-bold">ترقية إلى برو</h3>
         </div>
 
-        <p className="text-muted-foreground">Get unlimited hearts and more!</p>
+        <p className="text-muted-foreground">احصل على قلوب غير محدودة والمزيد!</p>
       </div>
 
       <Button variant="super" className="w-full" size="lg" asChild>
-        <Link href="/shop">Upgrade today</Link>
+        <Link href="/shop">ترقية الآن</Link>
       </Button>
     </div>
   );

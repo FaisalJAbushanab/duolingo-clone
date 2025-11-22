@@ -9,56 +9,56 @@ export const Footer = () => {
         <Button size="lg" variant="ghost" className="w-full cursor-default">
           <Image
             src="/hr.svg"
-            alt="Croatian"
+            alt="الكرواتية"
             height={32}
             width={40}
-            className="mr-4 rounded-md"
+            className="ml-4 rounded-md"
           />
-          Croatian
+          الكرواتية
         </Button>
 
         <Button size="lg" variant="ghost" className="w-full cursor-default">
           <Image
             src="/es.svg"
-            alt="Spanish"
+            alt="الإسبانية"
             height={32}
             width={40}
-            className="mr-4 rounded-md"
+            className="ml-4 rounded-md"
           />
-          Spanish
+          الإسبانية
         </Button>
 
         <Button size="lg" variant="ghost" className="w-full cursor-default">
           <Image
             src="/fr.svg"
-            alt="French"
+            alt="الفرنسية"
             height={32}
             width={40}
-            className="mr-4 rounded-md"
+            className="ml-4 rounded-md"
           />
-          French
+          الفرنسية
         </Button>
 
         <Button size="lg" variant="ghost" className="w-full cursor-default">
           <Image
             src="/it.svg"
-            alt="Italian"
+            alt="الإيطالية"
             height={32}
             width={40}
-            className="mr-4 rounded-md"
+            className="ml-4 rounded-md"
           />
-          Italian
+          الإيطالية
         </Button>
 
         <Button size="lg" variant="ghost" className="w-full cursor-default">
           <Image
             src="/jp.svg"
-            alt="Japanese"
+            alt="اليابانية"
             height={32}
             width={40}
-            className="mr-4 rounded-md"
+            className="ml-4 rounded-md"
           />
-          Japanese
+          اليابانية
         </Button>
       </div>
     </div>

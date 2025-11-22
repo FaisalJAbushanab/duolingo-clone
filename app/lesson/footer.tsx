@@ -31,15 +31,15 @@ export const Footer = ({
       <div className="mx-auto flex h-full max-w-[1140px] items-center justify-between px-6 lg:px-10">
         {status === "correct" && (
           <div className="flex items-center text-base font-bold text-green-500 lg:text-2xl">
-            <CheckCircle className="mr-4 h-6 w-6 lg:h-10 lg:w-10" />
-            Nicely done!
+            <CheckCircle className="ml-4 h-6 w-6 lg:h-10 lg:w-10" />
+            أحسنت!
           </div>
         )}
 
         {status === "wrong" && (
           <div className="flex items-center text-base font-bold text-rose-500 lg:text-2xl">
-            <XCircle className="mr-4 h-6 w-6 lg:h-10 lg:w-10" />
-            Try again.
+            <XCircle className="ml-4 h-6 w-6 lg:h-10 lg:w-10" />
+            حاول مرة أخرى.
           </div>
         )}
 
@@ -49,22 +49,22 @@ export const Footer = ({
             size={isMobile ? "sm" : "lg"}
             onClick={() => (window.location.href = `/lesson/${lessonId}`)}
           >
-            Practice again
+            تمرن مرة أخرى
           </Button>
         )}
 
         <Button
           disabled={disabled}
           aria-disabled={disabled}
-          className="ml-auto"
+          className="mr-auto"
           onClick={onCheck}
           size={isMobile ? "sm" : "lg"}
           variant={status === "wrong" ? "danger" : "secondary"}
         >
-          {status === "none" && "Check"}
-          {status === "correct" && "Next"}
-          {status === "wrong" && "Retry"}
-          {status === "completed" && "Continue"}
+          {status === "none" && "تحقق"}
+          {status === "correct" && "التالي"}
+          {status === "wrong" && "إعادة المحاولة"}
+          {status === "completed" && "متابعة"}
         </Button>
       </div>
     </footer>

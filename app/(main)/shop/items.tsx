@@ -27,29 +27,29 @@ export const Items = ({
     if (pending || hearts === MAX_HEARTS || points < POINTS_TO_REFILL) return;
 
     startTransition(() => {
-      refillHearts().catch(() => toast.error("Something went wrong."));
+      refillHearts().catch(() => toast.error("حدث خطأ ما."));
     });
   };
 
   const onUpgrade = () => {
-    toast.loading("Redirecting to checkout...");
+    toast.loading("إعادة التوجيه إلى الدفع...");
     startTransition(() => {
       createStripeUrl()
         .then((response) => {
           if (response.data) window.location.href = response.data;
         })
-        .catch(() => toast.error("Something went wrong."));
+        .catch(() => toast.error("حدث خطأ ما."));
     });
   };
 
   return (
     <ul className="w-full">
       <div className="flex w-full items-center gap-x-4 border-t-2 p-4">
-        <Image src="/heart.svg" alt="Heart" height={60} width={60} />
+        <Image src="/heart.svg" alt="القلب" height={60} width={60} />
 
         <div className="flex-1">
           <p className="text-base font-bold text-neutral-700 lg:text-xl">
-            Refill hearts
+            إعادة ملء القلوب
           </p>
         </div>
 
@@ -63,10 +63,10 @@ export const Items = ({
           }
         >
           {hearts === MAX_HEARTS ? (
-            "full"
+            "ممتلئ"
           ) : (
             <div className="flex items-center">
-              <Image src="/points.svg" alt="Points" height={20} width={20} />
+              <Image src="/points.svg" alt="النقاط" height={20} width={20} />
 
               <p>{POINTS_TO_REFILL}</p>
             </div>
@@ -75,16 +75,16 @@ export const Items = ({
       </div>
 
       <div className="flex w-full items-center gap-x-4 border-t-2 p-4 pt-8">
-        <Image src="/unlimited.svg" alt="Unlimited" height={60} width={60} />
+        <Image src="/unlimited.svg" alt="غير محدود" height={60} width={60} />
 
         <div className="flex-1">
           <p className="text-base font-bold text-neutral-700 lg:text-xl">
-            Unlimited hearts
+            قلوب غير محدودة
           </p>
         </div>
 
         <Button onClick={onUpgrade} disabled={pending} aria-disabled={pending}>
-          {hasActiveSubscription ? "settings" : "upgrade"}
+          {hasActiveSubscription ? "الإعدادات" : "ترقية"}
         </Button>
       </div>
     </ul>

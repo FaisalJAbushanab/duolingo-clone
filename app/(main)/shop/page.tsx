@@ -23,7 +23,7 @@ const ShopPage = async () => {
   const isPro = !!userSubscription?.isActive;
 
   return (
-    <div className="flex flex-row-reverse gap-[48px] px-6">
+    <div className="flex flex-row gap-[48px] px-6">
       <StickyWrapper>
         <UserProgress
           activeCourse={userProgress.activeCourse}
@@ -37,13 +37,13 @@ const ShopPage = async () => {
 
       <FeedWrapper>
         <div className="flex w-full flex-col items-center">
-          <Image src="/shop.svg" alt="Shop" height={90} width={90} />
+          <Image src="/shop.svg" alt="المتجر" height={90} width={90} />
 
           <h1 className="my-6 text-center text-2xl font-bold text-neutral-800">
-            Shop
+            المتجر
           </h1>
           <p className="mb-6 text-center text-lg text-muted-foreground">
-            Spend your points on cool stuff.
+            أنفق نقاطك على أشياء رائعة.
           </p>
 
           <Items

@@ -23,7 +23,7 @@ const QuestsPage = async () => {
   const isPro = !!userSubscription?.isActive;
 
   return (
-    <div className="flex flex-row-reverse gap-[48px] px-6">
+    <div className="flex flex-row gap-[48px] px-6">
       <StickyWrapper>
         <UserProgress
           activeCourse={userProgress.activeCourse}
@@ -36,13 +36,13 @@ const QuestsPage = async () => {
 
       <FeedWrapper>
         <div className="flex w-full flex-col items-center">
-          <Image src="/quests.svg" alt="Quests" height={90} width={90} />
+          <Image src="/quests.svg" alt="المهام" height={90} width={90} />
 
           <h1 className="my-6 text-center text-2xl font-bold text-neutral-800">
-            Quests
+            المهام
           </h1>
           <p className="mb-6 text-center text-lg text-muted-foreground">
-            Complete quests by earning points.
+            أكمل المهام من خلال كسب النقاط.
           </p>
 
           <ul className="w-full">
@@ -56,7 +56,7 @@ const QuestsPage = async () => {
                 >
                   <Image
                     src="/points.svg"
-                    alt="Points"
+                    alt="النقاط"
                     width={60}
                     height={60}
                   />

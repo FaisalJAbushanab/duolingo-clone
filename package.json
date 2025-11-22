@@ -75,6 +75,7 @@
     }
   ],
   "dependencies": {
+    "@clerk/localizations": "^3.28.3",
     "@clerk/nextjs": "^6.22.0",
     "@neondatabase/serverless": "^1.0.1",
     "@radix-ui/react-avatar": "^1.0.4",
@@ -82,6 +83,7 @@
     "@radix-ui/react-progress": "^1.0.3",
     "@radix-ui/react-separator": "^1.0.3",
     "@radix-ui/react-slot": "^1.0.2",
+    "@tanstack/react-query": "^5.90.10",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "dotenv": "^16.4.5",
@@ -89,6 +91,7 @@
     "lucide-react": "^0.359.0",
     "next": "^14.2.33",
     "next-themes": "^0.3.0",
+    "ra-core": "^5.13.2",
     "ra-data-simple-rest": "^5.8.4",
     "react": "^18",
     "react-admin": "^4.16.20",
@@ -113,7 +116,7 @@
     "eslint": "^8.57.0",
     "eslint-config-next": "14.1.4",
     "eslint-config-prettier": "^9.1.0",
-    "pg": "^8.11.3",
+    "pg": "^8.16.3",
     "postcss": "^8",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.12",

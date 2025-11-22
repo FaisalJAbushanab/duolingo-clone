@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import {
   ClerkLoaded,
@@ -12,7 +12,7 @@ import { Loader } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-import Banner from "@/components/banner";
+// import Banner from "@/components/banner";
 import { Button } from "@/components/ui/button";
 import { links } from "@/config";
 import { cn } from "@/lib/utils";
@@ -20,10 +20,14 @@ import { cn } from "@/lib/utils";
 export const Header = () => {
   const { isSignedIn } = useAuth();
   const [hideBanner, setHideBanner] = useState(true);
+  
+  useEffect(() => {
+    setHideBanner(true);
+  }, []);
 
   return (
     <>
-      <Banner hide={hideBanner} setHide={setHideBanner} />
+      {/* <Banner hide={hideBanner} setHide={setHideBanner} /> */}
 
       <header
         className={cn(
