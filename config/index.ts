@@ -1,22 +1,21 @@
 import type { Metadata } from "next";
 
 export const siteConfig: Metadata = {
-  title: "Lingo",
+  title: "معمل القدرات",
   description:
-    "Interactive platform for language learning with lessons, quizzes, and progress tracking.",
+    "منصة متكاملة لتدريب القدرات بسهولة، وتمرن على أسئلة تشبه الاختبار الحقيقي.",
   keywords: [
     "reactjs",
     "nextjs",
     "vercel",
     "react",
-    "duolingo-clone",
-    "learn-language",
+    "تدريب القدرات",
     "shadcn",
     "shadcn-ui",
     "radix-ui",
     "cn",
     "clsx",
-    "lingo",
+    "معمل القدرات",
     "postgresql",
     "sonner",
     "drizzle",

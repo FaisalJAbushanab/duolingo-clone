@@ -1,5 +1,5 @@
 {
-  "name": "duolingo-clone",
+  "name": "qudlab",
   "version": "1.0.1",
   "private": true,
   "scripts": {
@@ -18,20 +18,19 @@
     "email": "sanidhya.verma12345@gmail.com",
     "url": "https://github.com/sanidhyy"
   },
-  "description": "Interactive platform for language learning with lessons, quizzes, and progress tracking.",
+  "description": "منصة متكاملة لتدريب القدرات بسهولة، وتمرن على أسئلة تشبه الاختبار الحقيقي.",
   "keywords": [
     "reactjs",
     "nextjs",
     "vercel",
     "react",
-    "duolingo-clone",
+    "معمل القدرات",
     "learn-language",
     "shadcn",
     "shadcn-ui",
     "radix-ui",
     "cn",
     "clsx",
-    "lingo",
     "postgresql",
     "sonner",
     "drizzle",

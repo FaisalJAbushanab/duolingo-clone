@@ -35,9 +35,9 @@ export const createStripeUrl = async () => {
       {
         quantity: 1,
         price_data: {
-          currency: "USD",
+          currency: "SAR",
           product_data: {
-            name: "Lingo Pro",
+            name: "Qudlab Pro",
             description: "Unlimited hearts.",
           },
           unit_amount: 2000, // $20.00 USD
