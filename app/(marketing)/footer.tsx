@@ -8,58 +8,58 @@ export const Footer = () => {
       <div className="mx-auto flex h-full max-w-screen-lg items-center justify-evenly">
         <Button size="lg" variant="ghost" className="w-full cursor-default">
           <Image
-            src="/hr.svg"
-            alt="الكرواتية"
+            src="/quests.svg"
+            alt="أسئلة تدريبية"
             height={32}
             width={40}
             className="ml-4 rounded-md"
           />
-          الكرواتية
+          أحدث التجميعات لاختبار القدرات
         </Button>
 
         <Button size="lg" variant="ghost" className="w-full cursor-default">
           <Image
-            src="/es.svg"
-            alt="الإسبانية"
+            src="/leaderboard.svg"
+            alt="تقدّمك"
             height={32}
             width={40}
             className="ml-4 rounded-md"
           />
-          الإسبانية
+          تابع تقدمك في كل مهارة
         </Button>
 
         <Button size="lg" variant="ghost" className="w-full cursor-default">
           <Image
-            src="/fr.svg"
-            alt="الفرنسية"
+            src="/points.svg"
+            alt="النقاط"
             height={32}
             width={40}
             className="ml-4 rounded-md"
           />
-          الفرنسية
+          نقاط وتجميع يحفّزك على الاستمرار
         </Button>
 
         <Button size="lg" variant="ghost" className="w-full cursor-default">
           <Image
-            src="/it.svg"
-            alt="الإيطالية"
+            src="/heart.svg"
+            alt="الاستمرارية"
             height={32}
             width={40}
             className="ml-4 rounded-md"
           />
-          الإيطالية
+          مراجعة يومية خفيفة تناسب جدولك
         </Button>
 
-        <Button size="lg" variant="ghost" className="w-full cursor-default">
+        {/* <Button size="lg" variant="ghost" className="w-full cursor-default">
           <Image
-            src="/jp.svg"
-            alt="اليابانية"
+            src="/shop.svg"
+            alt="خطط التدريب"
             height={32}
             width={40}
             className="ml-4 rounded-md"
           />
-          اليابانية
-        </Button>
+          خطط تدريب مرنة لطلاب الثانوية
+        </Button> */}
       </div>
     </div>
   );
