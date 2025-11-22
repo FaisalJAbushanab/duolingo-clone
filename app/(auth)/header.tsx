@@ -6,7 +6,7 @@ import {
   ClerkLoading,
   SignInButton,
   SignedOut,
-  useAuth,
+  // useAuth,
 } from "@clerk/nextjs";
 import { Loader } from "lucide-react";
 import Image from "next/image";
@@ -14,11 +14,11 @@ import Link from "next/link";
 
 // import Banner from "@/components/banner";
 import { Button } from "@/components/ui/button";
-import { links } from "@/config";
+// import { links } from "@/config";
 import { cn } from "@/lib/utils";
 
 export const Header = () => {
-  const { isSignedIn } = useAuth();
+  // const { isSignedIn } = useAuth();
   const [hideBanner, setHideBanner] = useState(true);
 
   useEffect(() => {
@@ -40,7 +40,7 @@ export const Header = () => {
             <Image src="/mascot.svg" alt="Mascot" height={40} width={40} />
 
             <h1 className="text-2xl font-extrabold tracking-wide text-green-600">
-              Lingo
+              معمل القدرات
             </h1>
           </Link>
 
@@ -52,7 +52,7 @@ export const Header = () => {
               <SignedOut>
                 <SignInButton>
                   <Button size="lg" variant="ghost">
-                    Login
+                    تسجيل الدخول
                   </Button>
                 </SignInButton>
               </SignedOut>
